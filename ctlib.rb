@@ -17,8 +17,7 @@ class Ctlib < Formula
      args = std_cmake_args
      args << "-DCXXFLAGS=-mmacosx-version-min"
      system "cmake", *args
-     system "make -j VERBOSE=1"
-     system "make doc"
+     system "make VERBOSE=1"
      system "make install"
   end
 end
