@@ -11,15 +11,12 @@ class Ctlib < Formula
   depends_on "doxygen"
   #depends_on "openmpi"
   depends_on "ann"
-
   def install
-     args = std_cmake_args
-     system "ls"
-     system "mkdir build"
-     system "cd build"
-     system "cmake", *args, ".."
-     system "make VERBOSE=1"
-     system "make install"
+  mkdir "build" do
+    system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
+    system "make"
+    system "make", "install"
   end
 end
+
 __END__
