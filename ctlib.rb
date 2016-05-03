@@ -18,5 +18,3 @@ class Ctlib < Formula
     system "make", "install"
   end
 end
-
-__END__
