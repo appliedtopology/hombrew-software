@@ -9,7 +9,7 @@ class Ctlib < Formula
   depends_on "boost"
   depends_on "metis"
   depends_on "doxygen"
-  depends_on "openmpi"
+  #depends_on "openmpi"
   depends_on "ann"
 
   def install
