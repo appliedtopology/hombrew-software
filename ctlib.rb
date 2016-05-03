@@ -18,3 +18,4 @@ class Ctlib < Formula
     system "make", "install"
   end
 end
+end
