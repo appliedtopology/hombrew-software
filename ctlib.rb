@@ -14,9 +14,7 @@ class Ctlib < Formula
 
   def install
      args = std_cmake_args
-     system "mkdir build"
-     system "cd    build"
-     system "cmake ..", *args
+     system "cmake", *args
      system "make VERBOSE=1"
      system "make install"
   end
