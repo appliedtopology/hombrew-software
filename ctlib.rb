@@ -2,8 +2,7 @@ require "formula"
 
 class Ctlib < Formula
   homepage "http://ctl.appliedtopology.org"
-  url "https://github.com/appliedtopology/ctl/archive/v0.2.tar.gz"
-  sha1 "2cc4f0f8c31e4943529d99570025b2424630ec5e"
+  head "https://github.com/appliedtopology/ctl", :using => :git, :branch => :master 
 
   depends_on "cmake" => :build
   depends_on "tbb"
