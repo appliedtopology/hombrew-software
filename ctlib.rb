@@ -14,7 +14,7 @@ class Ctlib < Formula
   def install
   mkdir "build" do
     system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
-    system "make"
+    system "make ctl"
     system "make", "install"
   end
 end
